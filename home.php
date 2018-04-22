@@ -27,8 +27,15 @@
             <?php
                 require_once('config/config.php');
                 $sql = mysqli_query($db_link, "SELECT * FROM mvote_kabegami");
+                $number = 0;
+                print("<tr>");
                 while ($result = mysqli_fetch_assoc($sql)) {
-                    print('<tr><td><h2>'.$result['KabegamiID'].'</h2></td><td><h2><a href="votedo.php?id='.$result['KabegamiID'].'">'.$result['KabegamiName'].'に票を入れる</a></h2></td></tr>');
+                    print('<td><a href="votedo.php?id='.$result['KabegamiID'].'"><font size="10"><b>'.$result['KabegamiID'].'</b></font></a></td>');
+                    $number = $number + 1;
+                    if($number == 5) {
+                        print("</tr><tr>");
+                        $number = 0;
+                    }
                 }
             ?>
         </table>
@@ -43,7 +50,7 @@
                         $KabegamiID = $result['KabegamiID'];
                         $sql2 = mysqli_query($db_link, "SELECT COUNT(*) AS num FROM mvote_vote WHERE KabegamiID = '$KabegamiID'");
                         $result2 = mysqli_fetch_assoc($sql2);
-                        print('<tr><th>'.$result['KabegamiName'].'</th><td><h3>'.$result2['num'].'</h3></td></tr>');
+                        print('<tr><th>'.$result['KabegamiName'].'</th><td>'.$result2['num'].'</td></tr>');
                     }
                 ?>
             </table>
