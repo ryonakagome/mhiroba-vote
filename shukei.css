@@ -4,5 +4,26 @@
     top: 0vh;
     width: 100vw;
     height: 100vh;
-    background: black;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+#shukei-midashi {
+	position: absolute;
+	left: 0vw:
+	top: 10vh;
+	width: 100vw;
+	height: 80vh;
+	color: white;
+	text-align: center;
+}
+
+#shukei-nagashi {
+	position: absolute;
+	bottom: 10%;
+	left: 0vw;
+	width: 100vw;
+	height: 10%;
+	color: white;
+	background: black;
 }
