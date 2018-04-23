@@ -27,7 +27,7 @@
                 <br>
                 <font size="10"><b><?php print($result['KabegamiName']); ?></b></font>
                 <br>
-                <font size="7"><?php print($result['Voting']); ?>票</font>
+                <font size="7"><b><?php print($result['Voting']); ?></b></font><font size="5">票</font>
             </div>
         </div>
         <div id="shukei-nagashi">
