@@ -33,11 +33,11 @@
         <div id="shukei-nagashi">
             <?php
                 $sql = mysqli_query($db_link, "SELECT KabegamiName, KabegamiAuthor, Voting FROM mvote_kabegami ORDER BY Voting DESC");
-                print('<marquee><h2>');
+                print('<marquee scrollamount="15"><h2>');
                 $number = 0;
                 while($result = mysqli_fetch_assoc($sql)) {
                     $number = $number + 1;
-                    print($number."位　".$result['KabegamiAuthor']."-".$result['KabegamiName']."　".$result['Voting']."票,");
+                    print($number."位　".$result['KabegamiAuthor']."-".$result['KabegamiName']."　".$result['Voting']."票,　");
                 }
                 print('</h2></marquee>');
             ?>
