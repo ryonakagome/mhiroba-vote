@@ -13,7 +13,7 @@
         <div id="shukei">
             <?php
                 require_once('config/config.php');
-                $sql = mysqli_query($db_link, "SELECT KabegamiID, MAX(Voting) AS num, KabegamiName, KabegamiAuthor FROM mvote_kabegami");
+                $sql = mysqli_query($db_link, "SELECT KabegamiID, Voting, KabegamiName, KabegamiAuthor FROM mvote_kabegami ORDER BY Voting DESC");
                 $result = mysqli_fetch_assoc($sql);
             ?>
             <style>
@@ -27,7 +27,7 @@
                 <br>
                 <font size="10"><b><?php print($result['KabegamiName']); ?></b></font>
                 <br>
-                <font size="7"><?php print($result['num']); ?>票</font>
+                <font size="7"><?php print($result['Voting']); ?>票</font>
             </div>
         </div>
         <div id="shukei-nagashi">
