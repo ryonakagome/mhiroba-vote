@@ -22,6 +22,7 @@
     <body>
         <a href="logout.php">ログアウト</a><br>
         <a href="shukei.php">集計画面を見る</a>
+        <a href="shukei-textonly.php">簡易集計画面を見る</a>
         <h2>投票</h2>
         <table border="1">
             <?php
