@@ -8,7 +8,7 @@
         <title>集計結果 - 超まいくらひろば2018</title>
 
         <link rel="stylesheet" href="shukei.css">
-        <meta http-equiv="Refresh" content="5">
+        <meta http-equiv="Refresh" content="60">
     </head>
     <body bgcolor="black">
         <div id="shukei">
