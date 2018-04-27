@@ -1,0 +1,24 @@
+#zyunitoka {
+	position: absolute;
+	top: 20vh;
+	left: 0vw;
+	color: white;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+sakusyamei {
+	font-size: 3em;
+	background-repeat: no-repeat;
+	text-shadow: black 0 5px;
+	-webkit-text-stroke: 2px #000
+}
+
+titlemei {
+	font-size: 5em;
+    background-repeat: no-repeat;
+    text-shadow: black 0 5px;
+    -webkit-text-stroke: 2px #000
+
+}
