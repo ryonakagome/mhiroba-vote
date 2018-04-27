@@ -1,0 +1,18 @@
+*
+{
+    color: #fff;
+}
+body
+{
+    background-color: #aaa;
+}
+.table-width
+{
+    width: 100%;
+    text-align: center;
+}
+.cell-button
+{
+    padding: 10px;
+    background-color: #222;
+}
